@@ -237,6 +237,9 @@
     /* SHOP (agregado 5/10/2026) */
     .shop-box { margin-top:3rem; background:var(--off); border:1px dashed rgba(217,124,42,0.5); padding:2.5rem 2rem; text-align:center; }
     .shop-box p { font-size:0.95rem; color:#4a5568; line-height:1.7; max-width:620px; margin:0 auto 1.5rem; font-weight:300; }
+    .shop-products { margin-top:3rem; min-height:200px; }
+    .shop-note { margin-top:1.5rem; text-align:center; font-size:0.92rem; color:#4a5568; font-weight:300; }
+    .shop-note a { color:var(--amber); font-weight:500; }
     .cat-desc { font-size:0.8rem; color:rgba(255,255,255,0.6); margin-top:0.4rem; line-height:1.5; font-weight:300; }
     .form-note { font-size:0.75rem; color:rgba(255,255,255,0.35); margin-top:0.3rem; }
     .contact-grid > *, .form-group { min-width:0; }
@@ -289,19 +292,19 @@
     <div class="container">
       <div class="reveal"><span class="section-label">Shop</span><h2 class="section-title">Shop by <em>Category</em></h2></div>
       <div class="cat-grid">
-        <a href="#contact" class="cat-card reveal reveal-delay-1" style="display:block;text-decoration:none">
+        <a href="#shop-products" class="cat-card reveal reveal-delay-1" style="display:block;text-decoration:none">
           <div class="cat-img" style="background-image:url('sports-outdoor.jpg.jpeg')"></div>
           <div class="cat-overlay"></div>
           <div class="cat-content"><span class="cat-tag">Category 01</span><div class="cat-name">Hunting &amp; Outdoor</div><p class="cat-desc">Optics, mounts, calls, packs and field accessories.</p></div>
           <div class="cat-arrow">&#8594;</div>
         </a>
-        <a href="#contact" class="cat-card reveal reveal-delay-2" style="display:block;text-decoration:none">
+        <a href="#shop-products" class="cat-card reveal reveal-delay-2" style="display:block;text-decoration:none">
           <div class="cat-img" style="background-image:url('tools-equipment.jpg.jpeg')"></div>
           <div class="cat-overlay"></div>
           <div class="cat-content"><span class="cat-tag">Category 02</span><div class="cat-name">Tools &amp; Gun Care</div><p class="cat-desc">Cleaning kits, lubricants, multi-tools and maintenance gear.</p></div>
           <div class="cat-arrow">&#8594;</div>
         </a>
-        <a href="#contact" class="cat-card reveal reveal-delay-3" style="display:block;text-decoration:none">
+        <a href="#shop-products" class="cat-card reveal reveal-delay-3" style="display:block;text-decoration:none">
           <div class="cat-img" style="background-image:url('gear-accessories.jpg.jpeg')"></div>
           <div class="cat-overlay"></div>
           <div class="cat-content"><span class="cat-tag">Category 03</span><div class="cat-name">Gear &amp; Accessories</div><p class="cat-desc">Holsters, cases, lights, knives and everyday carry.</p></div>
@@ -309,11 +312,10 @@
         </a>
       </div>
 
-      <!-- TIENDA SHOPIFY: pegar aqui el codigo "Buy Button" (Shopify Starter) y borrar el parrafo de abajo. -->
-      <div class="shop-box reveal" id="shop-products">
-        <p>Our online catalog is being updated. To order a product or check availability, send us a message or call us — we reply within one business day.</p>
-        <a href="#contact" class="btn-primary">Ask About a Product</a>
+      <div class="shop-products reveal" id="shop-products">
+        <div id="collection-component-1791234056279"></div>
       </div>
+      <p class="shop-note">Looking for something else? <a href="#contact">Ask us about special orders</a> — we reply within one business day.</p>
     </div>
   </section>
 
@@ -424,6 +426,55 @@
       const body = `${v('cf-msg')}\n\nName: ${v('cf-name')}\nEmail: ${v('cf-email')}\nPhone: ${v('cf-phone')}`;
       window.location.href = `mailto:info@ironridgegroup.co?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
+  </script>
+  <script type="text/javascript">
+  /* Tienda Shopify (Buy Button, coleccion "IRONRIDGE Shop"). 5/10/2026 */
+  (function () {
+    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+    if (window.ShopifyBuy && window.ShopifyBuy.UI) { ShopifyBuyInit(); } else { loadScript(); }
+    function loadScript() {
+      var script = document.createElement('script');
+      script.async = true; script.src = scriptURL;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+      script.onload = ShopifyBuyInit;
+    }
+    function ShopifyBuyInit() {
+      var client = ShopifyBuy.buildClient({ domain: '1ynxf5-z5.myshopify.com', storefrontAccessToken: 'aeb95b15eb23f5718cde4d5b873c48b4' });
+      var btn = {"font-family":"Oswald, sans-serif","letter-spacing":"1.5px","text-transform":"uppercase","border-radius":"0px","background-color":"#d97c2a",":hover":{"background-color":"#b8661f"},":focus":{"background-color":"#b8661f"}};
+      ShopifyBuy.UI.onReady(client).then(function (ui) {
+        ui.createComponent('collection', {
+          id: '491344494765',
+          node: document.getElementById('collection-component-1791234056279'),
+          moneyFormat: '%24%7B%7Bamount%7D%7D',
+          options: {
+            product: {
+              googleFonts: ['Oswald'],
+              styles: {
+                product: { '@media (min-width: 601px)': { 'max-width': 'calc(25% - 20px)', 'margin-left': '20px', 'margin-bottom': '50px', 'width': 'calc(25% - 20px)' },
+                           img: { height: 'calc(100% - 15px)', position: 'absolute', left: '0', right: '0', top: '0', 'object-fit': 'contain' },
+                           imgWrapper: { 'padding-top': 'calc(75% + 15px)', position: 'relative', height: '0' } },
+                title: { 'font-family': 'Oswald, sans-serif', 'font-weight': '600', color: '#0d1b2a' },
+                price: { color: '#d97c2a', 'font-weight': '600' },
+                button: btn
+              },
+              text: { button: 'Add to cart' }
+            },
+            productSet: { styles: { products: { '@media (min-width: 601px)': { 'margin-left': '-20px' } } } },
+            modalProduct: {
+              googleFonts: ['Oswald'],
+              contents: { img: false, imgWithCarousel: true, button: false, buttonWithQuantity: true },
+              styles: { product: { '@media (min-width: 601px)': { 'max-width': '100%', 'margin-left': '0px', 'margin-bottom': '0px' } },
+                        title: { 'font-family': 'Oswald, sans-serif', color: '#0d1b2a' }, button: btn },
+              text: { button: 'Add to cart' }
+            },
+            option: {},
+            cart: { styles: { button: btn }, text: { total: 'Subtotal', button: 'Checkout' } },
+            toggle: { styles: { toggle: { 'background-color': '#d97c2a', ':hover': { 'background-color': '#b8661f' }, ':focus': { 'background-color': '#b8661f' } } } }
+          }
+        });
+      });
+    }
+  })();
   </script>
 </body>
 </html>
