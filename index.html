@@ -3,31 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IRONRIDGE – Sports, Outdoor &amp; Tools Distribution | Plantation, FL</title>
+  <title>IRONRIDGE – Hunting, Shooting &amp; Outdoor Gear | Online Store</title>
 
   <!-- SEO -->
-  <meta name="description" content="IRONRIDGE is a Florida-based B2B sourcing and distribution company specializing in Sports, Outdoor, Tools and Gear products. We connect brands with retailers and online marketplaces across the US.">
-  <meta name="keywords" content="wholesale distribution Florida, outdoor gear distributor, tools wholesale, sports equipment B2B, IRONRIDGE, Plantation FL distributor">
+  <meta name="description" content="IRONRIDGE is an online retailer of hunting, shooting and outdoor accessories based in Plantation, Florida. Genuine products from trusted brands, sold directly to customers in the U.S. and Latin America.">
+  <meta name="keywords" content="hunting accessories, shooting accessories, outdoor gear, optics, gun care, online store Florida, IRONRIDGE">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://ironridgegroup.co/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ironridgegroup.co/">
-  <meta property="og:title" content="IRONRIDGE – Sports, Outdoor &amp; Tools Distribution | Plantation, FL">
-  <meta property="og:description" content="Florida-based B2B sourcing and distribution. We connect quality brands with retailers and marketplaces across the US.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80">
+  <meta property="og:title" content="IRONRIDGE – Hunting, Shooting &amp; Outdoor Gear">
+  <meta property="og:description" content="Online retailer of hunting, shooting and outdoor accessories. Genuine products, shipped to customers in the U.S. and Latin America.">
+  <meta property="og:image" content="https://ironridgegroup.co/sports-outdoor.jpg.jpeg">
   <meta property="og:site_name" content="IRONRIDGE">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="IRONRIDGE – Sports, Outdoor &amp; Tools Distribution">
-  <meta name="twitter:description" content="Florida-based B2B sourcing and distribution. Connecting brands with marketplaces and retailers.">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80">
+  <meta name="twitter:title" content="IRONRIDGE – Hunting, Shooting &amp; Outdoor Gear">
+  <meta name="twitter:description" content="Online retailer of hunting, shooting and outdoor accessories based in Plantation, Florida.">
+  <meta name="twitter:image" content="https://ironridgegroup.co/sports-outdoor.jpg.jpeg">
 
   <!-- Schema.org -->
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Organization","name":"IRONRIDGE","legalName":"CCNA Group LLC","url":"https://ironridgegroup.co","description":"Florida-based B2B sourcing and distribution company specializing in Sports, Outdoor, Tools and Gear products.","address":{"@type":"PostalAddress","streetAddress":"261 N University Dr, Suite 500 PMB 1033","addressLocality":"Plantation","addressRegion":"FL","postalCode":"33324","addressCountry":"US"},"telephone":"+15612833496","email":"info@ironridgegroup.co","openingHours":"Mo-Fr 08:30-17:30","areaServed":"US"}
+  {"@context":"https://schema.org","@type":"OnlineStore","name":"IRONRIDGE","legalName":"CCNA Group LLC","url":"https://ironridgegroup.co","description":"Online retailer of hunting, shooting and outdoor accessories, selling directly to consumers in the United States and Latin America.","address":{"@type":"PostalAddress","streetAddress":"261 N University Dr, Suite 500 PMB 1033","addressLocality":"Plantation","addressRegion":"FL","postalCode":"33324","addressCountry":"US"},"telephone":"+15612833496","email":"info@ironridgegroup.co","openingHours":"Mo-Fr 08:30-17:30","areaServed":["US","Latin America"]}
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -234,6 +234,15 @@
       .cta-band{flex-direction:column;text-align:center;}
       footer{flex-direction:column;text-align:center;}
     }
+    /* SHOP (agregado 5/10/2026) */
+    .shop-box { margin-top:3rem; background:var(--off); border:1px dashed rgba(217,124,42,0.5); padding:2.5rem 2rem; text-align:center; }
+    .shop-box p { font-size:0.95rem; color:#4a5568; line-height:1.7; max-width:620px; margin:0 auto 1.5rem; font-weight:300; }
+    .cat-desc { font-size:0.8rem; color:rgba(255,255,255,0.6); margin-top:0.4rem; line-height:1.5; font-weight:300; }
+    .form-note { font-size:0.75rem; color:rgba(255,255,255,0.35); margin-top:0.3rem; }
+    .contact-grid > *, .form-group { min-width:0; }
+    .form-group input, .form-group select, .form-group textarea { width:100%; }
+    @media(max-width:600px){ .form-row{grid-template-columns:1fr;} .stats-grid{grid-template-columns:1fr 1fr;}
+      .hero{height:auto;min-height:0;padding-top:110px;} .hero-content{margin-bottom:2.5rem;} .hero-actions .btn-primary,.hero-actions .btn-outline{width:100%;} }
   </style>
 </head>
 <body>
@@ -241,192 +250,151 @@
   <nav id="navbar">
     <a href="#" class="logo">IRON<span>RIDGE</span></a>
     <ul class="nav-links">
+      <li><a href="#shop">Shop</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#categories">Categories</a></li>
+      <li><a href="#promise">Our Promise</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="#contact" class="nav-cta">Partner With Us</a>
+    <a href="#shop" class="nav-cta">Shop Now</a>
   </nav>
 
   <section class="hero">
-    <div class="hero-bg"></div>
+    <div class="hero-bg" style="background-image:url('sports-outdoor.jpg.jpeg')"></div>
     <div class="hero-overlay"></div>
     <div class="hero-grid"></div>
     <div class="hero-content">
-      <div class="hero-badge">Florida-Based &nbsp;·&nbsp; B2B Distribution</div>
-      <h1>Your Sourcing Partner for<br><em>Sports, Outdoor</em> &amp; <span class="outline">Tools</span></h1>
-      <p class="hero-sub">We connect quality brands with retailers, marketplaces, and wholesale partners across the United States.</p>
+      <div class="hero-badge">Online Store &nbsp;·&nbsp; Plantation, Florida</div>
+      <h1>Gear for the <em>Hunt</em>,<br>the Range &amp; the <span class="outline">Trail</span></h1>
+      <p class="hero-sub">Hunting, shooting and outdoor accessories from brands you trust — sold directly to customers across the United States and Latin America.</p>
       <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Start a Partnership</a>
-        <a href="#services" class="btn-outline">How We Work</a>
+        <a href="#shop" class="btn-primary">Shop Now</a>
+        <a href="#promise" class="btn-outline">Our Promise</a>
       </div>
     </div>
     <div class="hero-stats">
-      <div class="hero-stat"><span class="hero-stat-num" data-target="44">0</span><span class="hero-stat-label">Brands Sourced</span></div>
+      <div class="hero-stat"><span class="hero-stat-num">100%</span><span class="hero-stat-label">New &amp; Genuine</span></div>
+      <div class="hero-stat"><span class="hero-stat-num">US</span><span class="hero-stat-label">+ Latin America</span></div>
+      <div class="hero-stat"><span class="hero-stat-num">EN/ES</span><span class="hero-stat-label">Bilingual Support</span></div>
       <div class="hero-stat"><span class="hero-stat-num">FL</span><span class="hero-stat-label">Based in Florida</span></div>
-      <div class="hero-stat"><span class="hero-stat-num">B2B</span><span class="hero-stat-label">Distribution Focus</span></div>
-      <div class="hero-stat"><span class="hero-stat-num" data-target="3">0</span><span class="hero-stat-label">Core Categories</span></div>
     </div>
   </section>
 
   <div class="ticker">
     <div class="ticker-inner">
-      <span class="ticker-item">Sports &amp; Outdoor</span><span class="ticker-item">Tools &amp; Equipment</span><span class="ticker-item">Gear &amp; Accessories</span><span class="ticker-item">B2B Distribution</span><span class="ticker-item">Wholesale Sourcing</span><span class="ticker-item">Marketplace Support</span><span class="ticker-item">Brand Representation</span><span class="ticker-item">Catalog Development</span><span class="ticker-item">Sports &amp; Outdoor</span><span class="ticker-item">Tools &amp; Equipment</span><span class="ticker-item">Gear &amp; Accessories</span><span class="ticker-item">B2B Distribution</span><span class="ticker-item">Wholesale Sourcing</span><span class="ticker-item">Marketplace Support</span><span class="ticker-item">Brand Representation</span><span class="ticker-item">Catalog Development</span>
+      <span class="ticker-item">Optics &amp; Mounts</span><span class="ticker-item">Gun Care &amp; Cleaning</span><span class="ticker-item">Hunting Accessories</span><span class="ticker-item">Range Gear</span><span class="ticker-item">Knives &amp; Tools</span><span class="ticker-item">Outdoor Essentials</span><span class="ticker-item">Optics &amp; Mounts</span><span class="ticker-item">Gun Care &amp; Cleaning</span><span class="ticker-item">Hunting Accessories</span><span class="ticker-item">Range Gear</span><span class="ticker-item">Knives &amp; Tools</span><span class="ticker-item">Outdoor Essentials</span>
     </div>
   </div>
+
+  <section class="categories" id="shop">
+    <div class="container">
+      <div class="reveal"><span class="section-label">Shop</span><h2 class="section-title">Shop by <em>Category</em></h2></div>
+      <div class="cat-grid">
+        <a href="#contact" class="cat-card reveal reveal-delay-1" style="display:block;text-decoration:none">
+          <div class="cat-img" style="background-image:url('sports-outdoor.jpg.jpeg')"></div>
+          <div class="cat-overlay"></div>
+          <div class="cat-content"><span class="cat-tag">Category 01</span><div class="cat-name">Hunting &amp; Outdoor</div><p class="cat-desc">Optics, mounts, calls, packs and field accessories.</p></div>
+          <div class="cat-arrow">&#8594;</div>
+        </a>
+        <a href="#contact" class="cat-card reveal reveal-delay-2" style="display:block;text-decoration:none">
+          <div class="cat-img" style="background-image:url('tools-equipment.jpg.jpeg')"></div>
+          <div class="cat-overlay"></div>
+          <div class="cat-content"><span class="cat-tag">Category 02</span><div class="cat-name">Tools &amp; Gun Care</div><p class="cat-desc">Cleaning kits, lubricants, multi-tools and maintenance gear.</p></div>
+          <div class="cat-arrow">&#8594;</div>
+        </a>
+        <a href="#contact" class="cat-card reveal reveal-delay-3" style="display:block;text-decoration:none">
+          <div class="cat-img" style="background-image:url('gear-accessories.jpg.jpeg')"></div>
+          <div class="cat-overlay"></div>
+          <div class="cat-content"><span class="cat-tag">Category 03</span><div class="cat-name">Gear &amp; Accessories</div><p class="cat-desc">Holsters, cases, lights, knives and everyday carry.</p></div>
+          <div class="cat-arrow">&#8594;</div>
+        </a>
+      </div>
+
+      <!-- TIENDA SHOPIFY: pegar aqui el codigo "Buy Button" (Shopify Starter) y borrar el parrafo de abajo. -->
+      <div class="shop-box reveal" id="shop-products">
+        <p>Our online catalog is being updated. To order a product or check availability, send us a message or call us — we reply within one business day.</p>
+        <a href="#contact" class="btn-primary">Ask About a Product</a>
+      </div>
+    </div>
+  </section>
 
   <section class="about" id="about">
     <div class="container">
       <div class="about-grid">
         <div class="about-text reveal">
           <span class="section-label">Who We Are</span>
-          <h2 class="section-title">Built to Move <em>Product</em> at Scale</h2>
-          <p>IRONRIDGE is a <strong>Florida-based sourcing and distribution company</strong> focused on the sports outdoor, tools, and gear market. We operate at the intersection of brands and channels — sourcing, evaluating, and moving product efficiently across US retail and online marketplaces.</p>
-          <p>We work directly with <strong>authorized distributors and brand partners</strong>, bringing a data-driven approach to wholesale sourcing and a deep understanding of marketplace dynamics.</p>
-          <a href="#contact" class="about-link">Start a conversation</a>
+          <h2 class="section-title">Outdoor Gear, <em>Sold Right</em></h2>
+          <p>IRONRIDGE is an <strong>online retailer of hunting, shooting and outdoor accessories</strong> based in Plantation, Florida. We sell directly to hunters, shooters and outdoor enthusiasts in the United States and Latin America.</p>
+          <p>Every product we sell is <strong>new, genuine and purchased through authorized distributors</strong> and brand programs. We follow each manufacturer's pricing and reseller policies, and our own team handles every customer question — in English or Spanish.</p>
+          <a href="#contact" class="about-link">Contact our team</a>
         </div>
         <div class="stats-grid reveal reveal-delay-2">
-          <div class="stat-card"><span class="stat-num">44<span>+</span></span><span class="stat-desc">Brands actively researched and sourced in our pipeline</span></div>
-          <div class="stat-card"><span class="stat-num">3<span>+</span></span><span class="stat-desc">Core product categories: Outdoor, Tools, Gear &amp; Accessories</span></div>
-          <div class="stat-card"><span class="stat-num">FL</span><span class="stat-desc">Based in Plantation, Florida — serving buyers across the US</span></div>
-          <div class="stat-card"><span class="stat-num">B2B</span><span class="stat-desc">Exclusively focused on business-to-business wholesale distribution</span></div>
+          <div class="stat-card"><span class="stat-num">100<span>%</span></span><span class="stat-desc">New, genuine products from authorized sources</span></div>
+          <div class="stat-card"><span class="stat-num">B2C</span><span class="stat-desc">We sell directly to end consumers — not to other resellers</span></div>
+          <div class="stat-card"><span class="stat-num">FL</span><span class="stat-desc">Based in Plantation, Florida</span></div>
+          <div class="stat-card"><span class="stat-num">EN<span>/</span>ES</span><span class="stat-desc">Customer support in English and Spanish</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="process" id="process">
+  <section class="process" id="promise">
     <div class="container">
       <div class="reveal">
-        <span class="section-label">How It Works</span>
-        <h2 class="section-title" style="color:#fff;">A Simple, <em>Transparent</em> Process</h2>
-        <p class="process-subtitle">From first contact to active partnership — we make it straightforward.</p>
+        <span class="section-label">Our Promise</span>
+        <h2 class="section-title" style="color:#fff;">What You Can <em>Count On</em></h2>
+        <p class="process-subtitle">Three commitments behind every order.</p>
       </div>
       <div class="process-steps">
         <div class="process-step reveal reveal-delay-1">
           <span class="step-num">01</span>
-          <span class="step-icon">📋</span>
-          <div class="step-title">Submit Your Inquiry</div>
-          <p class="step-desc">Fill out our short contact form with your business details, category interest, and volume expectations. We review every inquiry within 24 business hours.</p>
+          <span class="step-icon">✅</span>
+          <div class="step-title">Genuine Products</div>
+          <p class="step-desc">We buy only from authorized distributors and brand programs. No gray-market or used items — every product arrives new, in its original packaging.</p>
         </div>
         <div class="process-step reveal reveal-delay-2">
           <span class="step-num">02</span>
-          <span class="step-icon">🔍</span>
-          <div class="step-title">We Evaluate the Fit</div>
-          <p class="step-desc">Our team analyzes your product category, target channels, and brand requirements. We verify distributor authorization and assess market opportunity.</p>
+          <span class="step-icon">🏷️</span>
+          <div class="step-title">Brand-Respectful Selling</div>
+          <p class="step-desc">We follow each manufacturer's MAP and reseller policies, and we present their products accurately, with correct descriptions and images.</p>
         </div>
         <div class="process-step reveal reveal-delay-3">
           <span class="step-num">03</span>
           <span class="step-icon">🤝</span>
-          <div class="step-title">Active Partnership</div>
-          <p class="step-desc">Once aligned, we begin sourcing, ordering, and distributing your product across agreed channels with transparent reporting and a dedicated contact.</p>
+          <div class="step-title">Real Customer Support</div>
+          <p class="step-desc">Product questions, order status and returns are handled by our own team in Florida, in English and Spanish, within one business day.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="services" id="services">
-    <div class="container">
-      <div class="services-header">
-        <div class="reveal"><span class="section-label">What We Do</span><h2 class="section-title">Our <em>Services</em></h2></div>
-        <a href="#contact" class="about-link reveal">Work with us</a>
-      </div>
-      <div class="bento">
-        <div class="bento-card span-6 dark reveal">
-          <div class="bento-bg" style="background-image:url('https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&q=70')"></div>
-          <span class="svc-icon">📦</span>
-          <div class="bento-inner"><span class="svc-label">Core Service</span><div class="svc-title">Product Sourcing</div><p class="svc-desc">Finding the right products across outdoor, tools, and gear categories. Data-driven selection based on market demand and margin potential.</p></div>
-        </div>
-        <div class="bento-card span-6 reveal reveal-delay-1">
-          <span class="svc-icon">🏷️</span>
-          <div class="bento-inner"><span class="svc-label">Partnerships</span><div class="svc-title">Brand Representation</div><p class="svc-desc">Building strong commercial partnerships with manufacturers and authorized distributors. Professional representation across all channels.</p></div>
-        </div>
-        <div class="bento-card span-4 amber-bg reveal reveal-delay-1">
-          <span class="svc-icon" style="color:rgba(255,255,255,0.3)">🛒</span>
-          <div class="bento-inner"><span class="svc-label">Digital</span><div class="svc-title">Marketplace Support</div><p class="svc-desc">Navigating Amazon, Walmart, and major online retail channels for maximum reach and sell-through.</p></div>
-        </div>
-        <div class="bento-card span-4 reveal reveal-delay-2">
-          <span class="svc-icon">📊</span>
-          <div class="bento-inner"><span class="svc-label">Operations</span><div class="svc-title">Catalog Development</div><p class="svc-desc">Structured product catalogs for wholesale, retail, and online distribution that meet buyer requirements.</p></div>
-        </div>
-        <div class="bento-card span-4 reveal reveal-delay-3">
-          <span class="svc-icon">🔗</span>
-          <div class="bento-inner"><span class="svc-label">Network</span><div class="svc-title">Distributor Network</div><p class="svc-desc">Access to a growing network of authorized distributors across Sports, Outdoor, Tools and Gear categories.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="categories" id="categories">
-    <div class="container">
-      <div class="reveal"><span class="section-label">Product Categories</span><h2 class="section-title">What We <em>Source</em></h2></div>
-      <div class="cat-grid">
-        <div class="cat-card reveal reveal-delay-1">
-          <div class="cat-img" style="background-image:url('sports-outdoor.jpg.jpeg')"></div>
-          <div class="cat-overlay"></div>
-          <div class="cat-content"><span class="cat-tag">Category 01</span><div class="cat-name">Sports &amp; Outdoor</div></div>
-          <div class="cat-arrow">&#8594;</div>
-        </div>
-        <div class="cat-card reveal reveal-delay-2">
-          <div class="cat-img" style="background-image:url('tools-equipment.jpg.jpeg')"></div>
-          <div class="cat-overlay"></div>
-          <div class="cat-content"><span class="cat-tag">Category 02</span><div class="cat-name">Tools &amp; Equipment</div></div>
-          <div class="cat-arrow">&#8594;</div>
-        </div>
-        <div class="cat-card reveal reveal-delay-3">
-          <div class="cat-img" style="background-image:url('gear-accessories.jpg.jpeg')"></div>
-          <div class="cat-overlay"></div>
-          <div class="cat-content"><span class="cat-tag">Category 03</span><div class="cat-name">Gear &amp; Accessories</div></div>
-          <div class="cat-arrow">&#8594;</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="serve">
-    <div class="container">
-      <div class="reveal" style="text-align:center">
-        <span class="section-label" style="justify-content:center">Who We Work With</span>
-        <h2 class="section-title">Built for <em>Business</em></h2>
-      </div>
-      <div class="serve-grid">
-        <div class="serve-card reveal reveal-delay-1"><span class="serve-icon">🏪</span><div class="serve-title">Retailers</div><p class="serve-desc">Independent and chain retailers looking for reliable, authorized wholesale sourcing partners.</p></div>
-        <div class="serve-card reveal reveal-delay-2"><span class="serve-icon">🛒</span><div class="serve-title">Marketplaces</div><p class="serve-desc">Amazon, Walmart, and online marketplace sellers who need consistent product supply and margin.</p></div>
-        <div class="serve-card reveal reveal-delay-3"><span class="serve-icon">🏷️</span><div class="serve-title">Brands</div><p class="serve-desc">Manufacturers and brands seeking new distribution channels and professional marketplace representation.</p></div>
-        <div class="serve-card reveal reveal-delay-4"><span class="serve-icon">🤝</span><div class="serve-title">Wholesale Partners</div><p class="serve-desc">Distributors and wholesalers interested in co-distribution partnerships for expanded market reach.</p></div>
       </div>
     </div>
   </section>
 
   <div class="cta-band">
-    <h2>Ready to source smarter?<br>Let's build something together.</h2>
-    <a href="#contact" class="btn-white">Get in Touch</a>
+    <h2>Questions about a product?<br>We answer in English and Spanish.</h2>
+    <a href="#contact" class="btn-white">Contact Us</a>
   </div>
 
   <section class="contact" id="contact">
     <div class="container">
-      <div class="reveal"><span class="section-label">Get In Touch</span><h2 class="section-title">Start a <em>Partnership</em></h2></div>
+      <div class="reveal"><span class="section-label">Customer Service</span><h2 class="section-title">Get in <em>Touch</em></h2></div>
       <div class="contact-grid">
         <div class="contact-info reveal">
-          <p>Interested in working with IRONRIDGE? Fill out the form and our team will get back to you within one business day. We're always open to evaluating new brand partnerships and distribution opportunities.</p>
+          <p>Questions about a product, an order or availability? Send us a message and our team will get back to you within one business day. Brands and suppliers are welcome to reach out too.</p>
           <div class="info-item"><span class="info-icon">📍</span><div><span class="info-label">Location</span><span class="info-val">Plantation, Florida 33324</span></div></div>
           <div class="info-item"><span class="info-icon">📞</span><div><span class="info-label">Phone</span><span class="info-val"><a href="tel:+15612833496">(561) 283-3496</a></span></div></div>
           <div class="info-item"><span class="info-icon">✉️</span><div><span class="info-label">Email</span><span class="info-val"><a href="mailto:info@ironridgegroup.co">info@ironridgegroup.co</a></span></div></div>
           <div class="info-item"><span class="info-icon">🕐</span><div><span class="info-label">Business Hours</span><span class="info-val">Mon – Fri &nbsp;|&nbsp; 8:30 AM – 5:30 PM EST</span></div></div>
         </div>
-        <form class="contact-form reveal reveal-delay-2" onsubmit="return false;">
+        <form class="contact-form reveal reveal-delay-2" id="contactForm">
           <div class="form-row">
-            <div class="form-group"><label>Company Name</label><input type="text" placeholder="Your company"></div>
-            <div class="form-group"><label>Business Email</label><input type="email" placeholder="you@company.com"></div>
+            <div class="form-group"><label for="cf-name">Name</label><input id="cf-name" type="text" placeholder="Your name" required></div>
+            <div class="form-group"><label for="cf-email">Email</label><input id="cf-email" type="email" placeholder="you@email.com" required></div>
           </div>
           <div class="form-row">
-            <div class="form-group"><label>Phone</label><input type="tel" placeholder="(000) 000-0000"></div>
-            <div class="form-group"><label>I am a...</label><select><option value="">Select type</option><option>Retailer / Store</option><option>Online Marketplace Seller</option><option>Brand / Manufacturer</option><option>Wholesale Distributor</option><option>Other</option></select></div>
+            <div class="form-group"><label for="cf-phone">Phone</label><input id="cf-phone" type="tel" placeholder="(000) 000-0000"></div>
+            <div class="form-group"><label for="cf-topic">Topic</label><select id="cf-topic"><option>Product question</option><option>Order status</option><option>Returns</option><option>Brand / supplier inquiry</option><option>Other</option></select></div>
           </div>
-          <div class="form-group"><label>Category of Interest</label><select><option value="">Select category</option><option>Sports &amp; Outdoor</option><option>Tools &amp; Equipment</option><option>Gear &amp; Accessories</option><option>Multiple Categories</option></select></div>
-          <div class="form-group"><label>Tell us about your business</label><textarea rows="4" placeholder="Describe your business and what you're looking for..."></textarea></div>
+          <div class="form-group"><label for="cf-msg">Message</label><textarea id="cf-msg" rows="4" placeholder="How can we help?" required></textarea></div>
           <button type="submit" class="form-submit">Send Message &#8594;</button>
+          <span class="form-note">Opens your email app with your message ready to send to info@ironridgegroup.co.</span>
         </form>
       </div>
     </div>
@@ -436,8 +404,8 @@
     <div class="footer-logo">IRON<span>RIDGE</span></div>
     <div class="footer-copy">&#169; 2026 CCNA Group LLC DBA IRONRIDGE &nbsp;·&nbsp; Plantation, FL &nbsp;·&nbsp; All Rights Reserved</div>
     <div class="footer-links">
+      <a href="#shop">Shop</a>
       <a href="#about">About</a>
-      <a href="#services">Services</a>
       <a href="#contact">Contact</a>
       <a href="mailto:info@ironridgegroup.co">Email</a>
     </div>
@@ -449,13 +417,13 @@
     const reveals = document.querySelectorAll('.reveal');
     const obs = new IntersectionObserver(entries => { entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);} }); }, {threshold:0.12});
     reveals.forEach(el => obs.observe(el));
-    const counters = document.querySelectorAll('[data-target]');
-    const cobs = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if(e.isIntersecting){ const el=e.target,t=+el.dataset.target; let c=0; const s=Math.ceil(t/30); const ti=setInterval(()=>{ c=Math.min(c+s,t); el.textContent=c; if(c>=t)clearInterval(ti); },40); cobs.unobserve(el); }
-      });
-    },{threshold:0.5});
-    counters.forEach(el => cobs.observe(el));
+    document.getElementById('contactForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const v = id => document.getElementById(id).value.trim();
+      const subject = `${v('cf-topic')} – ${v('cf-name')}`;
+      const body = `${v('cf-msg')}\n\nName: ${v('cf-name')}\nEmail: ${v('cf-email')}\nPhone: ${v('cf-phone')}`;
+      window.location.href = `mailto:info@ironridgegroup.co?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
   </script>
 </body>
 </html>
